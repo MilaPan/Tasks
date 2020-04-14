@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionary</title>
+</head>
+<body>
+<h1 align="center">
+    Questionary
+</h1>
+<form action="/questionary" method="POST">
+    <h3>
+        Tell us a bit about yourself:
+    </h3>
+    <p>
+    <table border="0">
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Lastname:</td>
+            <td><input type="text" name="surname"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" name="age"></td>
+        </tr>
+    </table>
+    </p>
+    <h3>
+        Please answer some simple questions:
+    </h3>
+    <p>
+    <table border="0">
+        <tr >
+            <td width="200">Do you have a car:</td>
+            <td><input type="radio" name="hasCar" value="true"> Yes
+                <input type="radio" name="hasCar" value="false"> No
+            </td>
+        </tr>
+        <tr>
+            <td width="200">What's your favorite pet:</td>
+            <td><input type="radio" name="carType" value="SEDAN"> Sedan
+                <input type="radio" name="carType" value="JEEP"> Jeep
+                <input type="radio" name="carType" value="HATCHBACK"> Hatchback
+                <input type="radio" name="carType" value="OTHER"> Other
+            </td>
+        </tr>
+        <tr>
+            <td width="200">How do you use the car:</td>
+            <td><input type="checkbox" name="carUse0" value="true"> For work
+                <input type="checkbox" name="carUse1" value="true"> For leisure
+                <input type="checkbox" name="carUse2" value="true"> For traveling
+                <input type="checkbox" name="carUse3" value="true"> For Sport
+                <input type="hidden" name="carUseNumber" value="4">
+            </td>
+        </tr>
+    </table>
+    </p>
+    <input type="submit" name="Submit Data"/>
+</form>
+</body>
+</html>
